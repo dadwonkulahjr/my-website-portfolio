@@ -1,0 +1,254 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background: url('/images/dust_scratches.png');
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+}
+
+
+.active {
+    font-weight: bold;
+    background-color: tomato;
+    color: white;
+}
+
+.socialMediaContactLinksList li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+    .socialMediaContactLinksList li a {
+        text-decoration: none;
+    }
+
+ul.socialMediaContactLinksList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.socialMediaContactLinksList a {
+    display: block;
+    padding: 8px;
+}
+
+
+.float-right-text {
+    float: right;
+}
+
+
+/*Card Parent Style*/
+.card_parent {
+    width: 100%;
+}
+
+.card {
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 10px 10px 8px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dev_title span {
+    text-shadow: 2px 2px 4px whitesmoke;
+}
+
+
+
+/*Media Q*/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .test {
+        /*background-color: red;*/
+        margin-top: 20%;
+    }
+
+    .card_parent {
+        /*height:600px;*/
+        margin-bottom: 15%
+    }
+
+    .card-img-top {
+        border-radius: 50%;
+    }
+
+    .card {
+        height: 400px;
+    }
+
+    .dev_title span {
+        font-size: 18px;
+    }
+
+    .dev_title {
+        margin-bottom: 60px;
+    }
+
+    .custom_form_style {
+        margin-top: 15%;
+    }
+
+    .custom_form_card {
+        height: auto;
+    }
+
+    /*About Me Page Style*/
+    .about_me_page_img_style {
+        border-radius: 50%;
+        width: 250px;
+    }
+
+    .about_me_page_card {
+        margin-top: 20%;
+        height:auto;
+        
+    }
+
+    .about_me_page_parent_div {
+        height: auto;
+        margin-bottom: 26%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .test {
+        /*background-color: yellow;*/
+        margin-top: 20%;
+    }
+
+    .dev_title {
+        margin-bottom: 20px;
+    }
+
+    /*About Me Page Style*/
+    .about_me_page_card {
+        top: 400%;
+        height: auto;
+    }
+
+    .about_me_page_img_style{
+        border-radius:28%;
+        margin-bottom:10%;
+        width:350px;
+    }
+
+    .about_me_page_parent_div {
+        height: auto;
+        margin-bottom: 28%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .test {
+        /*background-color: orange;*/
+        margin-bottom: -200px;
+    }
+
+    .dev_title {
+        line-height: 150px;
+    }
+
+        .dev_title span {
+            font-size: 19px;
+        }
+
+    /*About Me Page Style*/
+    .about_me_page_img_style {
+        /*border-radius:50%;*/
+        width:450px;
+        height:auto;
+        margin-bottom:10%;
+    }
+
+    .about_me_page_parent_div{
+        height:auto;
+        margin-bottom:18%;
+    }
+   
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .test {
+        /*background-color: green;*/
+        margin-top: 8%;
+        margin-bottom: 12%;
+    }
+
+    /*About Me Page Style*/
+    .about_me_page_img_style {
+        width: 350px;
+        margin-bottom: 10%;
+        /*border-radius: 50%;*/
+    }
+
+    .about_me_page_card {
+        top: 300%;
+    }
+
+    .about_me_page_parent_div{
+        margin-top:10%;
+        margin-bottom:15%;
+        border-radius:70%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .test {
+        margin-top: 150px;
+        /*background-color: purple;*/
+        /*margin-bottom:200px;*/
+    }
+
+    .dev_title {
+        line-height: 200px;
+    }
+
+        .dev_title span {
+            font-size: 32px;
+        }
+
+    .custom_form_style {
+        margin-top: 6%;
+        margin-bottom: 10%;
+    }
+
+    .custom_form_card {
+        height: auto;
+    }
+
+    /*About Me Page Style*/
+    .about_me_page_img_style {
+        width: 250px;
+        height: auto;
+    }
+
+    .about_me_page_card {
+        top: 300%;
+    }
+
+    .about_me_page_parent_div{
+        margin-top:8%;
+        margin-bottom:12%;
+    }
+}

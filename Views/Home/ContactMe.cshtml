@@ -1,0 +1,62 @@
+﻿@model ContactTuse
+@{
+    ViewData["Title"] = "Contact Me";
+}
+
+<div class="container-fluid custom_form_style">
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col col-md-6 col-lg-6">
+            <div class="card-deck">
+                <div class="card custom_form_card" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                    <div class="card-header text-center">
+                        <div class="card-body" style="font-family:Arial">
+                            <form method="post" asp-controller="home" asp-action="contactme">
+                                <div class="card-body">
+                                    <h3 class="text-center text-dark">
+                                        Message Me!&#128522;<br />
+                                        <i class="far fa-smile"></i>
+                                    </h3>
+                                    <hr />
+                                    <div class="form-row py-2">
+                                        <div class="col">
+                                            <div>
+                                                <input asp-for="Name" placeholder="Name..." class="form-control" autofocus />
+                                                <span class="text-danger" asp-validation-for="Name"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col mt-2">
+                                            <div>
+                                                <input asp-for="Email" placeholder="Email..." class="form-control" />
+                                                <span class="text-danger" asp-validation-for="Email"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="py-2 mt-2">
+                                        <textarea style="resize:none;" cols="20" rows="4" class="form-control" asp-for="Message" placeholder="What message do you have for the developer?"></textarea>
+                                        <span class="text-danger" asp-validation-for="Message"></span>
+                                    </div>
+
+                                    <div class="py-2">
+                                        <button type="submit" class="btn btn-dark form-control">
+                                            <i class="bi bi-send"></i>&nbsp;Send
+                                        </button>
+                                    </div>
+                                    <div class="py-1">
+                                        <a asp-action="index" asp-controller="home" class="btn btn-secondary form-control">
+                                            <i class="bi bi-house"></i>&nbsp;Back to Home page
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
