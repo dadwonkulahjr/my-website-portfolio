@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Keywords" content="Computer Programming, Azure DevOps, MVC, ASP.NET Web API, Blazor Server, Blazor Web, HTML, CSS, JavaScript, SQL, Python, PHP, Bootstrap, Java, XML and more. HTML, Azure DevOps, CI/CD, Web Api, Bootstrap, Node JS, .NET Core, .NET Developer, .NET Programmer, Web Developer, United Methodist University, Liberia, Sweden, Europe, C#, CSS, SQL, JavaScript, PHP, C++, Python, jQuery, Bootstrap, XML, MySQL, Icons, NodeJS, React, Angular, Git, Code Game, Programming, Web Development,  Learning">
+    <meta name="Description" content="Dad S. Wonkulah Jr is a C# .Net standard/core Software develper who holds a BSc. in Information Technology with Distinction.">
+    <meta name="google-site-verification" content="IO8J5l8HsXFz4pZVBAVpoRwmIJja6wlBZS3D5rdRdaY" />
     <title>@ViewData["Title"] - dadwonkulahjr</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -14,12 +17,12 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark fixed-top" data-bs-theme="dark">
         <div class="container">
-            <a class="navbar-brand text-white" asp-action="index" asp-controller="home">
+            <a class="navbar-brand text-white" title="Dad S. Wonkulah Jr" asp-action="index" asp-controller="home">
                 <img class="img-fluid rounded-circle"
                      src="~/images/Iam_Tuse.jpg"
                      alt="dadwonkulahjr"
                      style="vertical-align:top;width:35px" />
-                dadwonkulahjr&#128187;
+                Dad S. Wonkulah Jr&#128187;
             </a>
             <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,14 +30,14 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav ms-auto">
                     <li class="@(ViewContext.RouteData.Values["action"].ToString().Equals("Index") ? "active" : "")">
-                        <a href="@Url.ActionLink("Index", "Home")" class="nav-link text-white">Home</a>
+                        <a href="@Url.ActionLink("Index", "Home")" class="nav-link text-white" title="Home">Home</a>
                     </li>
                     <li class="@(ViewContext.RouteData.Values["action"].ToString().Equals("ContactMe") ? "active" : "")">
-                        <a href="@Url.ActionLink("ContactMe", "Home")" class="nav-link text-white">Contact Me</a>
+                        <a href="@Url.ActionLink("ContactMe", "Home")" class="nav-link text-white" title="Contact Me">Contact Me</a>
                     </li>
 
                     <li class="@(ViewContext.RouteData.Values ["action"].ToString().Equals("AboutMe") ? "active" : "")">
-                        <a href="@Url.ActionLink("AboutMe", "Home")" class="nav-link text-white">About Me</a>
+                        <a href="@Url.ActionLink("AboutMe", "Home")" class="nav-link text-white" title="About Me">About Me</a>
                     </li>
 
                 </ul>
@@ -52,13 +55,13 @@
     <footer class="border-top footer text-white bg-dark">
         <div class="container-fluid text-center">
             <div style="width:100%;">
-                <div class="w-auto">
-                    COPYRIGHT &copy; @DateTime.Now.Year | All rights reserved dadwonkulahjr&#128187;&#128522;
+                <div class="w-auto" title="All rights reserved Dad S. Wonkulah Jr">
+                    COPYRIGHT &copy; @DateTime.Now.Year | All rights reserved Dad S.&#128187;&#128522;
                 </div>
                 <div>
                     <ul class="socialMediaContactLinksList">
-                        <li><a href="https://github.com/dadwonkulahjr"><i class="bi bi-github" style="font-size:50px;"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/dad-s-wonkulah-jr-31a2a5182/"><i class="bi bi-linkedin" style="font-size:50px;"></i></a></li>
+                        <li><a target="_blank" href="https://github.com/dadwonkulahjr" title="Github Account"><i class="bi bi-github" style="font-size:50px;"></i></a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/dad-s-wonkulah-jr-31a2a5182/"  title="LinkedIn Account"><i class="bi bi-linkedin" style="font-size:50px;"></i></a></li>
 
                     </ul>
                 </div>

@@ -12,6 +12,8 @@ namespace mypersonalwebsite.Controllers
         {
             _repository = repository;
         }
+
+        [HttpGet]
         public IActionResult Index()
         {
             return View();
@@ -29,10 +31,10 @@ namespace mypersonalwebsite.Controllers
         {
             if (ModelState.IsValid)
             {
+
                 await _repository.CreateRecord(model);
                 TempData["notification"] = "Thanks for the message!";
                 return RedirectToAction(nameof(Index));
-
             }
             else
             {
@@ -41,6 +43,7 @@ namespace mypersonalwebsite.Controllers
             }
         }
 
+        [HttpGet]
         public IActionResult AboutMe()
         {
             return View();
